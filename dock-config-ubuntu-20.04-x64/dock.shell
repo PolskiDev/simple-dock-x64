@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+# Enables SUDO
+echo -e 'Applying changes...'
+
+# >> Start Main Program
+
+# Set GNOME dock to bottom
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+
+# Set GNOME dock to center alignment
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+
+# Set window buttons to left
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
+
+# >> Exiting Script
+echo -e ' '
+echo -e 'Saving changes...'
